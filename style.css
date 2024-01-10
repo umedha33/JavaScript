@@ -1,0 +1,40 @@
+/* body{
+    text-align: center;
+}
+
+#countLabel{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btnContainer{
+    text-align: center;
+}
+
+.btns{
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: white;
+    background: rgb(56, 156, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.25s;
+}
+
+.btns:hover{
+    background: rgb(21, 84, 146);
+} */
+
+#submitbtn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+/* .mylabel{
+    font-size: 3em;
+} */
