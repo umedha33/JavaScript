@@ -335,6 +335,7 @@
 // console.log(result6);
 
 
+
 // Slice -----------------------------------------------------------------------------------------------
 
 // let fullname = "Umedha Rajaratne";
@@ -351,3 +352,64 @@
 
 // console.log(username);
 // console.log(mailType);
+
+
+
+// Method Chaining -----------------------------------------------------------------------------------------------
+// calling one method after another (in one continous line of code) -----------------------------------------------------------------------------------------------
+
+// ------------- No Method Chaining ---------------------------------------------------
+// let getUsername = window.prompt("Enter your username");
+// getUsername = getUsername.trim();
+
+// let firstChar = getUsername.charAt(0);
+// firstChar = firstChar.toUpperCase();
+
+// let otherChar = getUsername.slice(1);
+// otherChar = otherChar.toLowerCase();
+
+// let username = firstChar + otherChar;
+// console.log(username);
+
+// ------------- With Method Chaining ---------------------------------------------------
+// let username = window.prompt("Enter your username");
+// username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
+// console.log(username);
+
+
+
+// Logical operators -----------------------------------------------------------------------------------------------
+// AND = &&
+// OR = ||
+// NOT = !
+
+// const temp = 30;
+// const isSunny = true;
+
+// if(temp <= 30 && temp >= 10){
+//     console.log("considers both statements to be true");
+// } else {
+//     console.log("-------");
+// }
+
+// if(temp == 30 || temp == 10){
+//     console.log("considers either statements to be true");
+// } else {
+//     console.log("-------");
+// }
+
+// if(!isSunny){
+//     console.log("It is sunny");
+// } else {       
+//     console.log("It is cloudy");
+// }
+
+
+
+// equal sign = == === != !== -----------------------------------------------------------------------------------------------
+
+// = assignment operator
+// == comparison operator (only compares with the value)
+// === strict equality operator (compares with bot value and data type)
+// != inequality operator (not equal (value))
+// !== strict inequality operator (not equal (value + datatype))
