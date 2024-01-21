@@ -413,3 +413,31 @@
 // === strict equality operator (compares with bot value and data type)
 // != inequality operator (not equal (value))
 // !== strict inequality operator (not equal (value + datatype))
+
+
+
+// While loops -----------------------------------------------------------------------------------------------
+
+// let username = "";
+
+// while (username === "" || username === null){
+//     username = window.prompt(`Enter a username`);
+// }
+// console.log(`hello ${username}`);
+
+// let loggedIn = false;
+// let username;
+// let password;
+
+// while (!loggedIn) {
+//     username = window.prompt(`Enter your username`);
+//     password = window.prompt(`Enter your password`);
+//     password = Number(password);
+
+//     if(username === "umedha" && password === 3354){
+//         console.log(`Logged in successfully`);
+//         loggedIn = true;
+//     } else {
+//         console.log(`Invalid credentials!`);
+//     }
+// }
