@@ -441,3 +441,156 @@
 //         console.log(`Invalid credentials!`);
 //     }
 // }
+
+
+
+// For loops -----------------------------------------------------------------------------------------------
+
+// for(let i = 10; i > 0; i--){
+//     console.log(i);
+// }
+// console.log("Happy New Year");
+
+// for(let i = 1; i <= 20; i++){
+//     if(i == 10){
+//         continue; //continue will skip the line and print the rest
+//     } else {
+//         console.log(i);
+//     }
+// }
+
+// for (let i = 1; i <= 10; i++){
+//     if(i == 10){
+//         break;
+//     } else {
+//         console.log(i); 
+//     }
+// }
+// console.log("OMG");
+
+
+
+// NUMBER GUESSING GAME -----------------------------------------------------------------------------------------------
+
+// const minNum = 1;
+// const maxNum = 10;
+// const answer = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
+
+// let attempts = 0;
+// let guess;
+// let running = true;
+
+// while (running) {
+//     guess = window.prompt(`Guess the number between ${minNum} - ${maxNum}`);
+//     guess = Number(guess);
+
+//     if(isNaN(guess)){
+//         window.alert("Please enter a number!");
+//     } else if (guess > maxNum || guess < minNum){
+//         window.alert(`Make sure to enter between ${minNum} - ${maxNum}`);
+//     } else {
+//         attempts++
+//         if (guess < answer){
+//             window.alert("Your guess is lower than the answer");
+//         } else if (guess > answer) {
+//             window.alert("Your guess is greater than the answer");
+//         } else {
+//             window.alert(`Great! your answer is correct, it took ${attempts} attempts for you to guess!`);
+//             running = false;
+//         }
+//     }
+// }
+
+
+
+// FUNCTIONS -----------------------------------------------------------------------------------------------
+
+// function happyBday(name, age){
+//     console.log(`Happy birthday ${name}, you are ${age} years old!`);
+// }
+// happyBday("Umedha", 22);
+
+// function add(x, y) {
+//     let result = x + y;
+//     return result;
+// }
+// console.log(add(2, 3));
+
+// function add(x, y) {
+//     return x+y;
+// }
+// console.log(add(2, 3));
+
+// function isEven(number){
+//     if (number % 2 === 0){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(isEven(11));
+
+// function isEven(number){
+//     return number % 2 === 0 ? true : false;
+// }
+// console.log(isEven(10));
+
+// function isValid(email){
+//     return email.includes("@") ? true : false;
+// }
+// console.log(isValid("umedha@gmail.com"));
+// console.log(isValid("umedhagmail.com"));
+
+
+
+// Variable Scope -----------------------------------------------------------------------------------------------
+//Global -----------------------------------------------------
+
+// let x = 15;
+// func1();
+// func2();
+
+// function func1(){
+//     console.log(x);
+// }
+// function func2(){
+//     console.log(x);
+// }
+
+//Local -----------------------------------------------------
+
+// func1();
+// func2();
+
+// function func1(){
+//     let x = 10;
+//     console.log(x);
+// }
+// function func2(){
+//     let x = 20;
+//     console.log(x);
+// }
+
+
+
+// Temperature Convetion Program -----------------------------------------------------------------------------------------------
+// const textBox = document.getElementById("textBox");
+// const toFahrenheit = document.getElementById("toFahrenheit");
+// const toCelsius = document.getElementById("toCelsius");
+// const result = document.getElementById("result");
+// let tempInput;
+
+// function convert() {
+
+//     if (toFahrenheit.checked) {
+//         tempInput = Number(textBox.value);
+//         tempInput = (tempInput * 9 / 5) + 32;
+//         result.textContent = tempInput.toFixed(1) + "℉";
+//     } else if (toCelsius.checked) {
+//         tempInput = Number(textBox.value);
+//         tempInput = (tempInput - 32) * 5 / 9
+//         result.textContent = tempInput.toFixed(1) + "℃";
+//     } else {
+//         result.textContent = "Select a unit first";
+//     }
+// }

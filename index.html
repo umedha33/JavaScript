@@ -9,24 +9,19 @@
 </head>
 
 <body>
-    <input type="checkbox" id="mycheckbox">
-    <label for="mycheckbox">Subscribe</label>
-    <br>
-    <input type="radio" id="visabtn" name="payemnt">
-    <label for="visabtn">visa</label>
-    <br>
-    <input type="radio" id="masterbtn" name="payemnt">
-    <label for="masterbtn">master</label>
-    <br>
-    <input type="radio" id="paypal" name="payemnt">
-    <label for="paypal">paypal</label>
-
-    <br>
-    <button type="submit" id="submitbtn">submit</button>
-
-    <br>
-    <p id="subresult"></p>
-    <p id="paymentresult"></p>
+    <form>
+        <h1>Temperature Convesion</h1>
+        <input type="number" id="textBox" value="0">
+        <br>
+        <input type="radio" id="toFahrenheit" name="unit">
+        <label for="toFahrenheit">Celsius to Fahrenheit</label>
+        <br>
+        <input type="radio" id="toCelsius" name="unit">
+        <label for="toCelsius">Fahrenheit to Celsius</label>
+        <br>
+        <button type="button" onclick="convert()">SUBMIT</button>
+        <p id="result"></p>
+    </form>
 
     <script src="index.js"></script>
 </body>
