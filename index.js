@@ -755,3 +755,48 @@
 //     diceResult.textContent = values.join(", ");
 //     diceImages.innerHTML = images.join(" ");
 // }
+
+
+
+
+// Random Password Generator Program -----------------------------------------------------------------------------------------------
+
+// function generatePassword(length, includeLowercase, includeUppercase, includeNumbers, includeSymbols) {
+
+//     const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+//     const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//     const numberChars = "1234567890";
+//     const symbolChars = "!@#$%^&*()_+-=<>?/";
+
+//     let allowedChars = "";
+//     let password = "";
+
+//     allowedChars += includeLowercase ? lowercaseChars : "";
+//     allowedChars += includeUppercase ? uppercaseChars : "";
+//     allowedChars += includeNumbers ? numberChars : "";
+//     allowedChars += includeSymbols ? symbolChars : "";
+
+//     if(length <= 0){
+//         return `(Password length should be at least 5!)`;
+//     }
+
+//     if(allowedChars.length === 0){
+//         return `(At least one set of characters must be chosen)`;
+//     }
+
+//     for(let i = 0; i < length; i++){
+//         const randomIndex = Math.floor(Math.random() * allowedChars.length);
+//         password += allowedChars[randomIndex];
+//     }
+//     return password;
+// }
+
+// const passwordLength = 20;
+// const includeLowercase = true;
+// const includeUppercase = true;
+// const includeNumbers = true;
+// const includeSymbols = true;
+
+// const password = generatePassword(passwordLength, includeLowercase, includeUppercase, includeNumbers, includeSymbols);
+
+// console.log(`Password: ${password}`);
