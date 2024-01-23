@@ -594,3 +594,164 @@
 //         result.textContent = "Select a unit first";
 //     }
 // }
+
+
+
+// Arrays -----------------------------------------------------------------------------------------------
+
+// let fruits = ["orange", "mango", "banana", "watermelon"];
+
+// fruits[1] = "grape";
+// fruits.push("strawberry"); //add to the end
+// fruits.pop(); //remove from the end
+// fruits.unshift("watermelon"); // add to the front
+// fruits.shift(); // remove from the front
+
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+// console.log(fruits[2]);
+// console.log(fruits[3]);
+// console.log(fruits[4]);
+
+// console.log(fruits.length);
+// console.log(fruits.indexOf("grape"));
+
+
+// for (let i = 0; i < fruits.length; i++) {
+//     console.log(fruits[i]);
+// }
+
+// for (let i = fruits.length - 1; i >= 0; i--) {
+//     console.log(fruits[i]);
+// }
+
+// fruits.sort().reverse();
+
+// for (let fruit of fruits){
+//     console.log(fruit);
+// }
+
+
+
+// Spread operator -----------------------------------------------------------------------------------------------
+// unpacks the element of arrays and strings ----------------------------------------
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// let maxNum = Math.max(...numbers);
+// let minNum = Math.min(...numbers);
+
+// console.log(maxNum);
+// console.log(minNum);
+
+// let myName = "Umedha";
+// let leters = [...myName].join("-");
+
+// console.log(leters); 
+
+// let fruits = ["apple", "orange", "watermelon"];
+// let vegetables = ["potato", "salad"];
+
+// let newFruits = [...fruits, ...vegetables,"strawberry"];
+
+// console.log(newFruits);
+
+
+
+// Rest operator -----------------------------------------------------------------------------------------------
+// joins the seperate elements into an array ----------------------------------------
+
+// function insideBasket(...food){ //this is rest operator
+//     console.log(food);
+//     console.log(...food); //this is spread operator
+// }
+
+// const food1 = "pizza";
+// const food2 = "burger";
+// const food3 = "hotdog";
+// const food4 = "pasta";
+// const food5 = "sushi";
+
+// insideBasket(food1, food2, food3, food4, food5);
+
+// function getFood(...food){
+//     return food; //this returns an array
+// }
+
+// const food1 = "pizza";
+// const food2 = "burger";
+// const food3 = "hotdog";
+// const food4 = "pasta";
+// const food5 = "sushi";
+
+// const food = getFood(food1, food2, food3, food4, food5);
+// console.log(food); 
+
+
+// function sum(...numbers) {
+//     let result = 0;
+//     for (let number of numbers) {
+//         result += number;
+//     }
+//     return result;
+// }
+
+// const total = sum(1, 2, 3, 4, 5);
+
+// console.log(`The total is: ${total}LKR`);
+
+// function average(...numbers) {
+//     let result = 0;
+//     let sum = 0;
+//     for (let number of numbers) {
+//         result = (sum += number) / numbers.length;
+//     }
+//     return result;
+// }
+
+// const avg = average(50, 60, 70, 80);
+
+// console.log(`Your average score is: ${avg}`);
+
+// function getAverage(...numbers) {
+//     let result = 0;
+//     for (let number of numbers) {
+//         result += number;
+//     }
+//     return result / numbers.length;
+// }
+
+// const avg = getAverage(50, 60, 70, 80);
+
+// console.log(`The average is: ${avg}`);
+
+// function combineStrings(...strings){
+//     return strings.join(" ");
+// }
+
+// const fullName = combineStrings("Umedha", "Chethiya", "Rajaratne");
+
+// console.log(fullName);
+
+
+
+// Dice Roller Program -----------------------------------------------------------------------------------------------
+
+// function rollDice() {
+//     const numInput = document.getElementById("numInput");
+//     const diceResult = document.getElementById("diceResult");
+//     const diceImages = document.getElementById("diceImages");
+//     const values = [];
+//     const images = [];
+
+//     let input = numInput.value;
+//     input = Number(input);
+
+//     for (let i = 1; i <= input; i++) {
+//         const value = Math.floor(Math.random() * 6) + 1;
+//         values.push(value);
+//         images.push(`<img src="images/Dice-${value}.png" alt="Dice-${value}">`);
+//     }
+//     diceResult.textContent = values.join(", ");
+//     diceImages.innerHTML = images.join(" ");
+// }
