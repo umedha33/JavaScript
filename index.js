@@ -1005,3 +1005,32 @@
 // function getLongWords(element){
 //     return element.length >= 6;
 // }
+
+
+
+// .reduce() -----------------------------------------------------------------------------------------------
+// reduces the elements of an array to a single value ---------------------
+
+// const prices = [10, 20, 30, 40, 50, 50, 40, 30, 20, 10];
+
+// const total = prices.reduce(sum);
+// console.log(`${total}LKR`);
+
+// function sum(accum, element){
+//     return accum + element;
+// }
+
+// const grades = [60, 70, 80, 90];
+
+// const maxGrade = grades.reduce(max);
+// const minGrade = grades.reduce(min);
+
+// console.log(`Max is: ${maxGrade}, Min is: ${minGrade}`);
+
+// function max(accum, element){
+//     return Math.max(accum, element);
+// }
+
+// function min(accum, element){
+//     return Math.min(accum, element);
+// }
