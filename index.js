@@ -800,3 +800,62 @@
 // const password = generatePassword(passwordLength, includeLowercase, includeUppercase, includeNumbers, includeSymbols);
 
 // console.log(`Password: ${password}`);
+
+//--------------------------------------------------------------------------------------------------------------
+
+// function randomPasswordGen(plength) {
+
+//     const allChars = "qwertyuiopasdfghjkl;zxcvbnm,.'][=-0987654321!@#$%^&*()";
+//     let finalPassword = "";
+
+//     for (let i = 1; i <= plength; i++) {
+//         let genPass = allChars.charAt(Math.floor(Math.random() * allChars.length));
+//         finalPassword += genPass;
+//     }
+
+//     return finalPassword;
+// }
+
+// const pLength = window.prompt("Enter required password length");
+// console.log(`Your Password is: ${randomPasswordGen(pLength)}`);
+
+
+
+// Callaback -----------------------------------------------------------------------------------------------
+// a function that is passed as an argument to another function -----------------------------------------------------------------------------------------------
+
+// function greeting(callback){
+//     callback(); // this line takes the parameter and calls it...
+//     console.log("Umedha");
+// }
+
+// function hello(){
+//     console.log("Hello");
+// }
+
+// function wait(){
+//     console.log("Wait");
+// }
+
+// function wssup(){
+//     console.log("Whats up");
+// }
+
+// greeting(hello);
+
+
+// function sum(callback, x, y){
+//     let result = x + y;
+//     callback(result);
+// }
+
+// function sub(callback, x, y){
+//     let result = x - y;
+//     callback(result);
+// }
+
+// function displayPage(result){
+//     document.getElementById("myh1").textContent = result;
+// }
+
+// sub(displayPage, 5, 10);
