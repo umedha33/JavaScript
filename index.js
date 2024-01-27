@@ -859,3 +859,96 @@
 // }
 
 // sub(displayPage, 5, 10);
+
+
+
+// forEach() -----------------------------------------------------------------------------------------------
+// Method used to itterate callbacks over the elements of an array -----------------------------------------------------------------------------------------------
+// in here element, index, and array is provided automaticaly {has to be in the order}
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// // numbers.forEach(double);
+// // numbers.forEach(triple);
+// // numbers.forEach(square);
+// numbers.forEach(cube);
+// numbers.forEach(display);
+
+// function double(element, index, array) {
+//     array[index] = element * 2;
+// }
+
+// function triple(element, index, array) {
+//     array[index] = element * 3;
+// }
+
+// function square (element, index, array) {
+//     array[index] = Math.pow(element, 2);
+// }
+
+// function cube (element, index, array) {
+//     array[index] = Math.pow(element, 3);
+// }
+
+// function display(element) {
+//     console.log(element);
+// }
+
+// let fruits = ["apple", "strawberry", "mango", "pineapple"];
+
+// // fruits.forEach(toUpper);
+// fruits.forEach(firstUpper);
+// fruits.forEach(display);
+
+// function toUpper(element, index, array){
+//     array[index] = element.toUpperCase();
+// }
+
+// function firstUpper(element, index, array){
+//     array[index] = element.charAt(0).toUpperCase() + element.slice(1);
+// }
+
+// function display(element){
+//     console.log(element);
+// }
+
+
+
+// .map() -----------------------------------------------------------------------------------------------
+// same this as the forEach() but returns a new array -----------------------------------------
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// // const newArray = numbers.map(square);
+// const newArray = numbers.map(cube);
+
+// console.log(`Answer is: ${newArray}`);
+// console.log(`Original is: ${numbers}`);
+
+// function square(element){
+//     return Math.pow(element, 2);
+// }
+
+// function cube(element){
+//     return Math.pow(element, 3);
+// }
+
+// const students = ["Umedha", "Nishmi", "Shavinda", "Onel"];
+
+// const afterUpper = students.map(toUpper);
+// console.log(afterUpper);
+
+// function toUpper(element){
+//     return element.toUpperCase();
+// }
+
+// const dates = ["2024-01-10","2025-2-20","2026-3-30"];
+
+// console.log(dates.map(formatDates));
+
+// function formatDates(element){
+//     const parts = element.split("-");
+//     // now each element is split to three elements...
+//     return `${parts[1]}/${parts[2]}/${parts[0]}`;
+//     // [0] = year   [1] = month   [2] = day....
+// }
