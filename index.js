@@ -865,6 +865,7 @@
 // forEach() -----------------------------------------------------------------------------------------------
 // Method used to itterate callbacks over the elements of an array -----------------------------------------------------------------------------------------------
 // in here element, index, and array is provided automaticaly {has to be in the order}
+// The length of the new array will be the same as the original array.....
 
 // let numbers = [1, 2, 3, 4, 5];
 
@@ -916,6 +917,7 @@
 
 // .map() -----------------------------------------------------------------------------------------------
 // same this as the forEach() but returns a new array -----------------------------------------
+// The length of the new array will be the same as the original array.....
 
 // const numbers = [1, 2, 3, 4, 5];
 
@@ -951,4 +953,55 @@
 //     // now each element is split to three elements...
 //     return `${parts[1]}/${parts[2]}/${parts[0]}`;
 //     // [0] = year   [1] = month   [2] = day....
+// }
+
+
+
+// .filter() -----------------------------------------------------------------------------------------------
+// creates a new array by filtering out elements ------------------------------------------
+//The length of the new array may be different from the original array, as it depends on how many elements satisfy the condition.....
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// // let evenNumbers = numbers.filter(isEven);
+// let evenNumbers = numbers.filter(isOdd);
+
+// console.log(evenNumbers);
+
+// function isEven(element) {
+//     return element % 2 === 0;
+// }
+
+// function isOdd(element) {
+//     return element % 2 !== 0;
+// }
+
+
+// const ages = [16, 17, 18, 20, 25, 30, 50, 60];
+// const adults = ages.filter(isAdult);
+// const children = ages.filter(isChild);
+
+// console.log(adults);
+// console.log(children);
+
+// function isAdult(element){
+//     return element >= 18;
+// }
+
+// function isChild(element){
+//     return element < 18;
+// }
+
+// const words = ["apple","strawberry","pineapple","mango"];
+// const shortWords = words.filter(getShortWords);
+// const longWords = words.filter(getLongWords);
+
+// console.log(shortWords);
+// console.log(longWords);
+
+// function getShortWords(element){
+//     return element.length < 6;
+// }
+
+// function getLongWords(element){
+//     return element.length >= 6;
 // }
