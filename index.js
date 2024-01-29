@@ -921,7 +921,7 @@
 
 // const numbers = [1, 2, 3, 4, 5];
 
-// // const newArray = numbers.map(square);
+// const newArray = numbers.map(square);
 // const newArray = numbers.map(cube);
 
 // console.log(`Answer is: ${newArray}`);
@@ -1010,6 +1010,7 @@
 
 // .reduce() -----------------------------------------------------------------------------------------------
 // reduces the elements of an array to a single value ---------------------
+// accumulator, element...
 
 // const prices = [10, 20, 30, 40, 50, 50, 40, 30, 20, 10];
 
@@ -1034,3 +1035,75 @@
 // function min(accum, element){
 //     return Math.min(accum, element);
 // }
+
+
+
+// function expressions -----------------------------------------------------------------------------------------------
+// a way to define functions as values or variable
+// usefull wehn we want to define functions which will be used only once...
+// function name will be unneccessary.
+// .map() .filter() .reduce() etc...
+
+// const hello = function(){
+//     console.log("Hello");
+// }
+
+// hello();
+
+// setTimeout(callbackFunction, delay); // this is a function, used to execute after a delay.
+
+// function sayHello() {
+//     console.log("Hello, setTimeout!");
+// }
+
+// // Call sayHello() after a delay of 2000 milliseconds (2 seconds)
+// setTimeout(sayHello, 2000);
+
+// setTimeout(function () {
+//     console.log("Hello with expressions");
+// }, 2500);
+
+
+// practice with function decleration method.........
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const squaredNums = numbers.map(square);
+
+// function square(element){
+//     return Math.pow(element, 2);
+// }
+
+// console.log(squaredNums);
+
+
+// practice with function expression method.........
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const squaredNums = numbers.map(function(element){
+//     return Math.pow(element, 2);
+// });
+
+// console.log(`with expressions: ${squaredNums}`);
+
+
+// const simpleNum = [2, 3, 4, 5, 6, 7];
+// const cubeNums = simpleNum.map(function (element) {
+//     return Math.pow(element, 3);
+// });
+
+// console.log(cubeNums);
+
+
+// const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const evenNums = nums.filter(function (element) {
+//     return element % 2 === 0;
+// });
+// const oddNums = nums.filter(function (element) {
+//     return element % 2 !== 0;
+// });
+// const sumOfNums = nums.reduce(function(accum, element){
+//     return accum + element;
+// });
+
+// console.log(evenNums);
+// console.log(oddNums);
+// console.log(sumOfNums);
+
