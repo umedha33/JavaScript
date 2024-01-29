@@ -1199,22 +1199,22 @@
 // ** arrow functions are not working while using (this.) ----------------
 // also we can use this. on multiple objects...
 
-const person1 = {
-    fname: "Umedha",
-    lname: "Rajaratne",
-    sayHello: function(){console.log(`Hello, ${this.fname}`)},
-    saySurname: function(){console.log(`Your surname is: ${this.lname}`)},
-}
+// const person1 = {
+//     fname: "Umedha",
+//     lname: "Rajaratne",
+//     sayHello: function(){console.log(`Hello, ${this.fname}`)},
+//     saySurname: function(){console.log(`Your surname is: ${this.lname}`)},
+// }
 
-const person2 = {
-    fname: "Nishmi",
-    lname: "Dharmathilake",
-    sayHello: function(){console.log(`Hello, ${this.fname}`)},
-    saySurname: function(){console.log(`Your surname is: ${this.lname}`)},
-}
+// const person2 = {
+//     fname: "Nishmi",
+//     lname: "Dharmathilake",
+//     sayHello: function(){console.log(`Hello, ${this.fname}`)},
+//     saySurname: function(){console.log(`Your surname is: ${this.lname}`)},
+// }
 
-person1.sayHello();
-person1.saySurname();
+// person1.sayHello();
+// person1.saySurname();
 
-person2.sayHello();
-person2.saySurname();
+// person2.sayHello();
+// person2.saySurname();
