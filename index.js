@@ -1190,3 +1190,31 @@
 // console.log(person2.isEmployeed);
 
 // person2.sayHello();
+
+
+
+// this -----------------------------------------------------------------------------------------------
+// reference to the object where the mentioned key is used ------------------------------
+// its like calling person.name but inside the object, we use this.name ----------
+// ** arrow functions are not working while using (this.) ----------------
+// also we can use this. on multiple objects...
+
+const person1 = {
+    fname: "Umedha",
+    lname: "Rajaratne",
+    sayHello: function(){console.log(`Hello, ${this.fname}`)},
+    saySurname: function(){console.log(`Your surname is: ${this.lname}`)},
+}
+
+const person2 = {
+    fname: "Nishmi",
+    lname: "Dharmathilake",
+    sayHello: function(){console.log(`Hello, ${this.fname}`)},
+    saySurname: function(){console.log(`Your surname is: ${this.lname}`)},
+}
+
+person1.sayHello();
+person1.saySurname();
+
+person2.sayHello();
+person2.saySurname();
