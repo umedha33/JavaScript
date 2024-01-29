@@ -1218,3 +1218,71 @@
 
 // person2.sayHello();
 // person2.saySurname();
+
+
+
+// constructor -----------------------------------------------------------------------------------------------
+// a special method for defining objects ---------------------------------------
+// this makes an object reuseable...
+
+// function Car(make, model, year, color) {
+//     this.make = make,
+//     this.model = model,
+//     this.year = year,
+//     this.color = color,
+//     this.drive = function(){console.log(`You are driving: ${model}`)}
+// }
+
+// const car1 = new Car("Jeep","Renegade","2020","white");
+// const car2 = new Car("Ford","Mustang","2021","brown");
+// const car3 = new Car("Pagani","huayra","2022","red");
+
+// console.log(car1.make);
+// console.log(car1.model);
+// console.log(car1.year);
+// console.log(car1.color);
+// car1.drive();
+
+// console.log(car2.make);
+// console.log(car2.model);
+// console.log(car2.year);
+// console.log(car2.color);
+// car2.drive();
+
+// console.log(car3.make);
+// console.log(car3.model);
+// console.log(car3.year);
+// console.log(car3.color);
+// car3.drive();
+
+
+
+// class -----------------------------------------------------------------------------------------------
+// an ES6 feature that provides a more structured and clear way to work with objects --------------
+
+// class Product{
+//     constructor(name, price){
+//         this.name = name;
+//         this.price = price;
+//     }
+
+//     displayProducts(){
+//         console.log(`Product: ${this.name}`);
+//         console.log(`Price: ${this.price.toFixed(2)}LKR`);
+//     }
+
+//     calculateTotal(salesTax){
+//         return this.price + (this.price * salesTax);
+//     }
+// }
+
+// const salesTax = 0.05;
+
+// const product1 = new Product("Shirt", 2000); // adding data to the object...
+// const product2 = new Product("Trouser", 5500);
+
+// product1.displayProducts(); // executing the displayproducts function...
+// const total = product1.calculateTotal(salesTax); // getting the return value of calculatetotal func...
+// console.log(`Total with Tax: ${total.toFixed(2)}`);
+
+// product2.displayProducts();
