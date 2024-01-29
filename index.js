@@ -1161,32 +1161,32 @@
 // object = {key: value} -----------------------------------------------------------------
 // objects can have methods too (dedicated functions/expressions)...
 
-const person1 = {
-    firstName: "Umedha",
-    lastName: "Rajaratne",
-    age: 22,
-    isEmployeed: false,
-    sayHello: function () { console.log("Helloww ----------") },
-}
+// const person1 = {
+//     firstName: "Umedha",
+//     lastName: "Rajaratne",
+//     age: 22,
+//     isEmployeed: false,
+//     sayHello: function () { console.log("Helloww ----------") },
+// }
 
-const person2 = {
-    firstName: "Nishmi",
-    lastName: "Dharmathilake",
-    age: 22,
-    isEmployeed: false,
-    sayHello: () => console.log("Hey there ---------"),
-}
+// const person2 = {
+//     firstName: "Nishmi",
+//     lastName: "Dharmathilake",
+//     age: 22,
+//     isEmployeed: false,
+//     sayHello: () => console.log("Hey there ---------"),
+// }
 
-console.log(person1.firstName);
-console.log(person1.lastName);
-console.log(person1.age);
-console.log(person1.isEmployeed);
+// console.log(person1.firstName);
+// console.log(person1.lastName);
+// console.log(person1.age);
+// console.log(person1.isEmployeed);
 
-person1.sayHello();
+// person1.sayHello();
 
-console.log(person2.firstName);
-console.log(person2.lastName);
-console.log(person2.age);
-console.log(person2.isEmployeed);
+// console.log(person2.firstName);
+// console.log(person2.lastName);
+// console.log(person2.age);
+// console.log(person2.isEmployeed);
 
-person2.sayHello();
+// person2.sayHello();
