@@ -1107,3 +1107,50 @@
 // console.log(oddNums);
 // console.log(sumOfNums);
 
+
+
+// Arrow function -----------------------------------------------------------------------------------------------
+// a way of writing function expressions -------------------------------
+// good for simple functions that you use only once --------------
+// (parameter) => some code...
+
+
+// single line code example..........
+
+// const hello = () => console.log("Hello!");
+// hello();
+
+// const hello = (name) => console.log(`Hello ${name}`);
+// hello("Umedha");
+
+
+//multiple line code example...............
+
+// const fullname = (fname, lname) => {
+//     console.log(`Hello ${fname}`)
+//     console.log(`Your surname is: ${lname}`)
+// };
+
+// fullname("Umedha", "Rajaratne");
+
+
+// setTimeout(() => console.log("Hey!"), 2000); // this is how you can use arrow func on timeouts
+
+// const numbers = [1, 2, 3, 4, 5, 6];
+
+// const squared = numbers.map((element) => {
+//     return Math.pow(element, 2)
+// }); // return will only be needed if there are multiple lines, otherwise you can write in single line
+
+// const squared = numbers.map((element) => Math.pow(element, 2));
+// const cubes = numbers.map((element) => Math.pow(element, 3));
+// const even = numbers.filter((element) => element % 2 === 0);
+// const odd = numbers.filter((element) => element % 2 !== 0);
+// const total = numbers.reduce((accum, element) => accum + element);
+
+// console.log(squared);
+// console.log(cubes);
+// console.log(even);
+// console.log(odd);
+// console.log(total);
+
