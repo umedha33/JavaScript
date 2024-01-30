@@ -1394,3 +1394,67 @@
 
 // animal1.hop();
 // animal2.hop(); // animal 2 (fish) dont have the hop method as its a method of rabbit...
+
+
+
+// super -----------------------------------------------------------------------------------------------
+// this keyword is used to call functions on the parent or superclass within a subclass --------------
+// Its often used in the context of classes (inheritance) --------------------------------
+// this can be used to access propertties and methods of the parent class...
+
+// class Animal {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+
+//     move(speed) {
+//         console.log(`The ${this.name} moves at a speed of ${speed}kmh`);
+//     }
+// }
+
+// class Rabbit extends Animal {
+//     constructor(name, age, runSpeed) {
+//         super(name, age);
+//         this.runSpeed = runSpeed;
+//     }
+
+//     hop() {
+//         console.log(`The ${this.name} can hop`);
+//         super.move(this.runSpeed);
+//     }
+// }
+
+// class Fish extends Animal {
+//     constructor(name, age, swimSpeed) {
+//         super(name, age);
+//         this.swimSpeed = swimSpeed;
+//     }
+
+//     swim() {
+//         super.move(this.swimSpeed);
+//     }
+// }
+
+// class Hawk extends Animal {
+//     constructor(name, age, flySpeed) {
+//         super(name, age);
+//         this.flySpeed = flySpeed;
+//     }
+
+//     fly() {
+//         super.move(this.flySpeed);
+//     }
+// }
+
+// const rabbit1 = new Rabbit("bunny", 20, 30);
+// const fish1 = new Fish("dory", 23, 50);
+// const hawk1 = new Hawk("woody", 26, 70);
+
+// console.log(rabbit1.name);
+// console.log(rabbit1.age);
+// console.log(rabbit1.runSpeed);
+
+// rabbit1.hop(); // executing hop method which calls the (move) super method...
+// fish1.swim(); // executing swim method which calls the (move) super method...
+// hawk1.fly(); // executing fly method which calls the (move) super method...
