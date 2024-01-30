@@ -1458,3 +1458,58 @@
 // rabbit1.hop(); // executing hop method which calls the (move) super method...
 // fish1.swim(); // executing swim method which calls the (move) super method...
 // hawk1.fly(); // executing fly method which calls the (move) super method...
+
+
+
+// getter -----------------------------------------------------------------------------------------------------
+// method that makes a property readable -----------------------------------------------------------------
+
+// setter -----------------------------------------------------------------------------------------------------
+// method that makes a property writeable ----------------------------------------------------------------
+// Setters allow you to perform validation or other logic before assigning a new value to a property
+// mainly used to validate and modify a value when reading.writing a property...
+
+class Rectangle {
+    constructor(width, height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    set width(newWidth) {
+        if (newWidth > 0) {
+            this._width = newWidth;
+        } else {
+            console.error("Width must be a positive number");
+        }
+    }
+    set height(newHeight) {
+        if (newHeight > 0) {
+            this._height = newHeight;
+        } else {
+            console.error("Width must be a positive number");
+        }
+    }
+
+    get width() {
+        return this._width;
+    }
+    get height() {
+        return this._height;
+    }
+
+    get area() { // this is not a property of the constructor but getters can reperesent as a prop...
+        return this._height * this._width;
+    }
+
+}
+
+const rect1 = new Rectangle(2, 4); // the object...
+
+rect1.width = 10; //updating initial values using the setter...
+rect1.height = 15;
+
+console.log(rect1.width);
+console.log(rect1.height);
+console.log(rect1.area); // displaying the getter just as a property of the rectangle constructor...
+
+
