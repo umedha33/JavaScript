@@ -1286,3 +1286,59 @@
 // console.log(`Total with Tax: ${total.toFixed(2)}`);
 
 // product2.displayProducts();
+
+
+
+// Static -----------------------------------------------------------------------------------------------
+// a keyword that defines properties or methods that belong to a class itself rather than the object created from that class 
+// class owns anything static, not the objects ---------------------------------------------------
+// statics are owned by the class not by the objects, its like a global variable but inside the class...
+
+// class MathUtil {
+//     static PI = 3.14159;
+
+//     static getDiameter(radius) {
+//         return radius * 2;
+//     }
+
+//     static getCirc(radius) {
+//         return 2 * this.PI * radius;
+//     }
+
+//     static getArea(radius) {
+//         return this.PI * radius * radius;
+//     }
+// }
+
+// console.log(MathUtil.PI);
+// console.log(MathUtil.getDiameter(10));
+// console.log(MathUtil.getCirc(10));
+// console.log(MathUtil.getArea(10));
+
+// class User {
+//     static userCount = 0;
+
+//     constructor(username) {
+//         this.username = username;
+//         User.userCount++;
+//     }
+
+//     static getUserCount() { // static method...
+//         console.log(`There are ${User.userCount} users online`);
+//     }
+
+//     sayHello() { // normal method (not static)...
+//         console.log(`My username is: ${this.username}`);
+//     }
+// }
+
+// const user1 = new User("Umedha");
+// const user2 = new User("Nishmi");
+
+// // console.log(user1.username);
+// // console.log(user2.username);
+// // console.log(User.userCount);
+
+// user1.sayHello();
+// user2.sayHello();
+// User.getUserCount();
