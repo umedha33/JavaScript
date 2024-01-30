@@ -1342,3 +1342,55 @@
 // user1.sayHello();
 // user2.sayHello();
 // User.getUserCount();
+
+
+
+// inheritance -----------------------------------------------------------------------------------------------
+// allows a new class to inherit properties and methods from an existing class (Parent -> Child) ----
+// helps with code reusability -------------------------------------------------------------------
+// with this child classes will get the properties from their parent classes ------------------
+// its like giving a copy for each child where they can edit property values without -----
+// the original values of the parent wont change...
+
+// class Animal {
+//     alive = true;
+
+//     eat() {
+//         console.log(`This ${this.name} is eating`);
+//     }
+
+//     sleep() {
+//         console.log(`This ${this.name} is sleeping`);
+//     }
+// }
+
+// class Rabbit extends Animal {
+//     name = "rabbit";
+//     hop() {
+//         console.log(`This ${this.name} can hop`);
+//     }
+// }
+
+// class Fish extends Animal {
+//     name = "fish";
+// }
+
+// class Dog extends Animal {
+//     name = "dog";
+// }
+
+// const animal1 = new Rabbit();
+// const animal2 = new Fish();
+// const animal3 = new Dog();
+
+// animal3.alive = false; // keep in mind that alive property is a property of the parent class...
+
+// console.log(`The ${animal1.name} is alive: ${animal1.alive}`);
+// console.log(animal2.alive);
+// console.log(animal3.alive);
+
+// animal1.eat();
+// animal1.sleep();
+
+// animal1.hop();
+// animal2.hop(); // animal 2 (fish) dont have the hop method as its a method of rabbit...
