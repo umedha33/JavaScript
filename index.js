@@ -1462,54 +1462,113 @@
 
 
 // getter -----------------------------------------------------------------------------------------------------
-// method that makes a property readable -----------------------------------------------------------------
+// a method we can use to return property data which will be uneditable -----------------------
+// mostly returns the private property value (not the original prop value) ---------------------
+// automatically invokes when the original property is accessed...
 
 // setter -----------------------------------------------------------------------------------------------------
-// method that makes a property writeable ----------------------------------------------------------------
-// Setters allow you to perform validation or other logic before assigning a new value to a property
-// mainly used to validate and modify a value when reading.writing a property...
-
-class Rectangle {
-    constructor(width, height) {
-        this.width = width;
-        this.height = height;
-    }
-
-    set width(newWidth) {
-        if (newWidth > 0) {
-            this._width = newWidth;
-        } else {
-            console.error("Width must be a positive number");
-        }
-    }
-    set height(newHeight) {
-        if (newHeight > 0) {
-            this._height = newHeight;
-        } else {
-            console.error("Width must be a positive number");
-        }
-    }
-
-    get width() {
-        return this._width;
-    }
-    get height() {
-        return this._height;
-    }
-
-    get area() { // this is not a property of the constructor but getters can reperesent as a prop...
-        return this._height * this._width;
-    }
-
-}
-
-const rect1 = new Rectangle(2, 4); // the object...
-
-rect1.width = 10; //updating initial values using the setter...
-rect1.height = 15;
-
-console.log(rect1.width);
-console.log(rect1.height);
-console.log(rect1.area); // displaying the getter just as a property of the rectangle constructor...
+// this allows you to validate values before assigning them to the property directly -------------
+// mostly assings the received values to a private propety (e.g. _name) ----------------------
+// automatically invokes when user tries to assign values to the original property...
 
 
+// class Rectangle {
+//     constructor(width, height) {
+//         this.width = width;
+//         this.height = height;
+//     }
+
+//     set width(newWidth) {
+//         if (newWidth > 0) {
+//             this._width = newWidth;
+//         } else {
+//             console.error("Width must be a positive number");
+//         }
+//     }
+//     set height(newHeight) {
+//         if (newHeight > 0) {
+//             this._height = newHeight;
+//         } else {
+//             console.error("Width must be a positive number");
+//         }
+//     }
+
+//     get width() {
+//         return this._width;
+//     }
+//     get height() {
+//         return this._height;
+//     }
+
+//     get area() { // this is not a property of the constructor but getters can reperesent as a prop...
+//         return this._height * this._width;
+//     }
+
+// }
+
+// const rect1 = new Rectangle(2, 4); // the object...
+
+// rect1.width = 10; //updating initial values using the setter...
+// rect1.height = 15;
+
+// console.log(rect1.width);
+// console.log(rect1.height);
+// console.log(rect1.area); // displaying the getter just as a property of the rectangle constructor...
+
+
+
+// class Person {
+//     constructor(fname, lname, age) {
+//         this.fname = fname;
+//         this.lname = lname;
+//         this.age = age;
+//     }
+
+//     set fname(newFname) {
+//         if (typeof newFname === "string" && newFname.length > 0) {
+//             this._fname = newFname;
+//         } else {
+//             console.error("First name should be a String value");
+//         }
+//     }
+
+//     set lname(newLname) {
+//         if (typeof newLname === "string" && newLname.length > 0) {
+//             this._lname = newLname;
+//         } else {
+//             console.error("Last name should be a String value");
+//         }
+//     }
+
+//     set age(newAge) {
+//         if (typeof newAge === "number" && newAge > 0) {
+//             this._age = newAge;
+//         } else {
+//             console.error("Age should be a Number");
+//         }
+//     }
+
+//     get fname() {
+//         return this._fname;
+//     }
+
+//     get lname() {
+//         return this._lname;
+//     }
+
+//     get age() {
+//         return this._age;
+//     }
+
+//     //we can also create getters to return data as they are a property of the class
+//     get fullName() { // keep in ind that this is not a function...
+//         return this._fname + " " + this.lname;
+//     }
+// }
+
+// const person1 = new Person("Umedha", "Rajaratne", 22);
+
+// console.log(person1.fname);
+// console.log(person1.lname);
+// console.log(person1.age);
+// console.log(`Your fullname is: ${person1.fullName}`);
