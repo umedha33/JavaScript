@@ -1665,3 +1665,62 @@
 // }
 
 // displayPerson(person2);
+
+
+
+// nested objects -----------------------------------------------------------------------------------------------------
+// objects inside objects, allows to represent more complex data structures -----------------------------
+// child object is enclosed by a parent object --------------------------------------------------------
+
+// const person = {
+//     fname: "Umedha",
+//     lname: "Rajratne",
+//     age: 22,
+//     isStudent: true,
+//     hobbies: ["coding", "editing", "gaming"],
+//     address: {
+//         street: "172c tivert",
+//         city: "kandy",
+//         country: "srilanka"
+//     }
+// }
+
+// // console.log(person.fname);
+// // console.log(person.lname);
+// // console.log(person.age);
+// // console.log(person.isStudent);
+
+// // console.log(person.hobbies);
+// // console.log(person.hobbies[1]);
+
+// // console.log(person.address);
+// // console.log(person.address.street);
+
+// for (const property in person.address){
+//     console.log(person.address[property]);
+// }
+
+
+//example with classes ----------------------------------------------------------
+
+// class Person { // this is the parent object
+//     constructor(name, age, ...address) {
+//         this.name = name;
+//         this.age = age;
+//         this.address = new Address(...address);
+//     }
+// }
+
+// class Address { // this is the child object
+//     constructor(street, city, country) {
+//         this.street = street;
+//         this.city = city;
+//         this.country = country;
+//     }
+// }
+
+// const person1 = new Person("Umedha", 22, "tivert", "kandy", "srilanka");
+
+// console.log(person1.name);
+// console.log(person1.age);
+// console.log(person1.address.street);
