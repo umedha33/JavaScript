@@ -1572,3 +1572,96 @@
 // console.log(person1.lname);
 // console.log(person1.age);
 // console.log(`Your fullname is: ${person1.fullName}`);
+
+
+
+// destructuring -----------------------------------------------------------------------------------------------------
+// extract values from arrays and objects, then assign them to variables ------------------------------
+// [] = to perform array destruction -------------------------------------------------------
+// {} = to perform object destruction ------------------------------------------
+
+// ------------- EX 1 -----------------------
+// swapping the values of two variables 
+
+// let a = 5;
+// let b = 10;
+
+// [a, b] = [b, a]; //destructre...
+
+// console.log(a);
+// console.log(b);
+
+
+// ------------- EX 2 -----------------------
+// swapping 2 elements of an array
+
+// const colors = ["red", "yellow", "blue", "orange", "pink"];
+
+// console.log(colors);
+
+// [colors[0], colors[4]] = [colors[4], colors[0]]; //destructure...
+
+// console.log(colors);
+
+
+
+// ------------- EX 3 -----------------------
+// assigning array elements to variables
+
+// const colors = ["red", "yellow", "blue", "orange", "pink"];
+
+// const [firstColor, secondColor, thirdColor, ...otherColors] = colors; //destructure...
+
+// console.log(firstColor);
+// console.log(secondColor);
+// console.log(thirdColor);
+// console.log(otherColors);
+
+
+// ------------- EX 4 -----------------------
+// extracting values from objects
+
+// const person1 = {
+//     fname: "Umedha",
+//     lname: "Rajratne",
+//     age: 22,
+//     job: "Dev",
+// }
+
+// const person2 = {
+//     fname: "Nishmi",
+//     lname: "Dharmathilake",
+//     age: 22,
+// }
+
+// const { fname, lname, age, job = "Unemp" } = person1; //destructure, can assign default values for empty
+
+// console.log(fname);
+// console.log(lname);
+// console.log(age);
+// console.log(job);
+
+
+// ------------- EX 5 -----------------------
+// destructuring in function parameters
+
+// function displayPerson({ fname, lname, age, job = "unemployed" }) {
+//     console.log(`full name: ${fname} ${lname}`);
+//     console.log(`age: ${age}`);
+//     console.log(`job: ${job}`);
+// }
+
+// const person1 = {
+//     fname: "Umedha",
+//     lname: "Rajratne",
+//     age: 22,
+//     job: "Dev",
+// }
+
+// const person2 = {
+//     fname: "Nishmi",
+//     lname: "Dharmathilake",
+//     age: 22,
+// }
+
+// displayPerson(person2);
