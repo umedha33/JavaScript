@@ -1733,7 +1733,7 @@ const fruits = [
     { name: "apple", color: "red", calories: 95 }, //indx-0
     { name: "orange", color: "orange", calories: 45 }, //indx-1
     { name: "banana", color: "yellow", calories: 35 }, //indx-2
-    { name: "pineapple", color: "yellow ", calories: 65 }, //indx-3
+    { name: "pineapple", color: "yellow", calories: 65 }, //indx-3
 ] // each element has an object...
 
 // // accessing the objects property of the fruits array...
@@ -1758,15 +1758,27 @@ const fruits = [
 // console.log(fruits);
 
 // accessing object properties using for loops
-fruits.forEach(fruit => console.log(fruit.name));
-fruits.forEach(fruit => console.log(fruit.color));
+// fruits.forEach(fruit => console.log(fruit.name));
+// fruits.forEach(fruit => console.log(fruit.color));
 
-// printing objects as arrays using map()
-const fruitNames = fruits.map(fruit => fruit.name);
-const fruitColors = fruits.map(fruit => fruit.color);
+// // printing objects as arrays using map()
+// const fruitNames = fruits.map(fruit => fruit.name);
+// const fruitColors = fruits.map(fruit => fruit.color);
 
-console.log(fruitNames);
-console.log(fruitColors);
+// console.log(fruitNames);
+// console.log(fruitColors);
 
 // using filter() with objects
-const yellowFruits = fruits.filter(fruit => fruit.)
+// const yellowFruits = fruits.filter(fruit => fruit.color === "yellow");
+// const lowCallorie = fruits.filter(fruit => fruit.calories < 55);
+
+// console.log(yellowFruits);
+// console.log(lowCallorie);
+
+// using reduce() with the objects
+// const maxFruit = fruits.reduce((max, fruit) => 
+//                                 fruit.calories > max.calories ?
+//                                 fruit : max);
+
+// console.log(maxFruit);
+// console.log(maxFruit.calories);
