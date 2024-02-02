@@ -1724,3 +1724,49 @@
 // console.log(person1.name);
 // console.log(person1.age);
 // console.log(person1.address.street);
+
+
+
+//array of objects ----------------------------------------------------------
+
+const fruits = [
+    { name: "apple", color: "red", calories: 95 }, //indx-0
+    { name: "orange", color: "orange", calories: 45 }, //indx-1
+    { name: "banana", color: "yellow", calories: 35 }, //indx-2
+    { name: "pineapple", color: "yellow ", calories: 65 }, //indx-3
+] // each element has an object...
+
+// // accessing the objects property of the fruits array...
+// console.log(fruits[2].name);
+// console.log(fruits[2].color);
+// // array[index].property-name
+
+// // we can push objects to the array...
+// fruits.push({ name: "avacardo", color: "green", calories: 105 });
+
+// console.log(fruits[4]);
+// console.log(fruits[4].name);
+// console.log(fruits[4].color);
+// console.log(fruits.length);
+
+// // can use pop to remove an object
+// fruits.pop();
+// console.log(fruits.copyWithinlength);
+
+// can use splice to remove multiple elements
+// fruits.splice(1,2); // index 1 to 2...
+// console.log(fruits);
+
+// accessing object properties using for loops
+fruits.forEach(fruit => console.log(fruit.name));
+fruits.forEach(fruit => console.log(fruit.color));
+
+// printing objects as arrays using map()
+const fruitNames = fruits.map(fruit => fruit.name);
+const fruitColors = fruits.map(fruit => fruit.color);
+
+console.log(fruitNames);
+console.log(fruitColors);
+
+// using filter() with objects
+const yellowFruits = fruits.filter(fruit => fruit.)
