@@ -1729,12 +1729,12 @@
 
 //array of objects ----------------------------------------------------------
 
-const fruits = [
-    { name: "apple", color: "red", calories: 95 }, //indx-0
-    { name: "orange", color: "orange", calories: 45 }, //indx-1
-    { name: "banana", color: "yellow", calories: 35 }, //indx-2
-    { name: "pineapple", color: "yellow", calories: 65 }, //indx-3
-] // each element has an object...
+// const fruits = [
+//     { name: "apple", color: "red", calories: 95 }, //indx-0
+//     { name: "orange", color: "orange", calories: 45 }, //indx-1
+//     { name: "banana", color: "yellow", calories: 35 }, //indx-2
+//     { name: "pineapple", color: "yellow", calories: 65 }, //indx-3
+// ] // each element has an object...
 
 // // accessing the objects property of the fruits array...
 // console.log(fruits[2].name);
@@ -1782,3 +1782,38 @@ const fruits = [
 
 // console.log(maxFruit);
 // console.log(maxFruit.calories);
+
+
+
+// sort() -------------------------------------------------------------------------------------------------
+// method used to sort elements of an array, sorrts elements as strings in lexicographic order in alphabetically 
+// lexicographic = {alphabet + numbers + symbols} as string...
+
+// let letters = ["q", "c", "v", "d", "b", "r", "h", "a"];
+// let numbers = [1, 7, 2, 9, 3, 5, 10, 3, 0];
+
+// console.log(letters);
+// console.log(letters.sort());
+
+// console.log(numbers);
+// console.log(numbers.sort()); // output: [0, 1, 10, 2, 3, 3, 5, 7, 9]
+// numbers.sort((a, b) => a - b); // sorting numbers in accending order...
+// console.log(numbers);
+// numbers.sort((a, b) => b - a); // sorting numbers in deccending order...
+// console.log(numbers);
+
+// const people = [
+//     { name: "umedha", age: 22, gpa: 3.5 },
+//     { name: "nishmi", age: 22, gpa: 3.0 },
+//     { name: "chethiya", age: 21, gpa: 3.3 },
+//     { name: "machan", age: 20, gpa: 2.9 },
+// ]
+
+// // people.sort((a, b) => a.age - b.age); // sorting with numbers within an object
+// // console.log(people);
+
+// people.sort((a, b) => a.name.localeCompare(b.name)); // sorting with strings wihtin an object (accending)
+// console.log(people);
+
+// people.sort((a, b) => b.name.localeCompare(a.name)); // sorting with strings wihtin an object (decending)
+// console.log(people);
