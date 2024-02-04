@@ -1817,3 +1817,22 @@
 
 // people.sort((a, b) => b.name.localeCompare(a.name)); // sorting with strings wihtin an object (decending)
 // console.log(people);
+
+
+
+// shuffling elements of an array -------------------------------------------------------------------------------------------------
+// fisher yates algorithm...
+
+// const cards = ['A', 'K', 'Q', 'J', 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// // making a shuffling function...
+// function shuffle(array) {
+//     for (let i = array.length - 1; i >= 0; i--) {
+//         const random = Math.floor(Math.random() * i);
+
+//         [array[i], array[random]] = [array[random], array[i]];
+//     }
+// }
+
+// shuffle(cards);
+// console.log(cards);
