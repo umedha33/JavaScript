@@ -1869,3 +1869,80 @@
 // if (date2 > date1) {
 //     console.log("Happy new year");
 // }
+
+
+
+// closure ----------------------------------------------------------------------------------------------------
+// a function defined inside of another function, inner function has access to variables of outer func ------
+// can encapsulate and make variables private but still be accessible to inner functions --------------
+// allows for state maintenance ------------------------------------------------------------------
+// used frequently in REACT...
+
+// function outer() {
+
+//     let message = "Hello from inner func";
+
+//     function inner() {
+//         console.log(message);
+//     }
+
+//     inner();
+// }
+
+// outer();
+
+
+// function myCounter() {
+//     let count = 0;
+
+//     function increment() {
+//         count++;
+//         // console.log(`Counter is: ${count}`);
+//     }
+
+//     function getCounter() {
+//         return count;
+//     }
+
+//     return { increment, getCounter };
+// }
+
+// const counter = myCounter();
+
+// counter.increment();
+// counter.increment();
+// counter.increment();
+// counter.increment();
+// counter.increment();
+
+// console.log(`Current counter is: ${counter.getCounter()}`);
+
+
+// function createGame() {
+
+//     let score = 0;
+
+//     function increaseScore(points) {
+//         score += points;
+//         console.log(`+${points}pts`);
+//     }
+
+//     function dereaseScore(points) {
+//         score -= points;
+//         console.log(`-${points}pts`);
+//     }
+
+//     function getScore() {
+//         return score;
+//     }
+
+//     return { increaseScore, dereaseScore, getScore };
+// }
+
+// const game = createGame();
+
+// game.increaseScore(5);
+// game.increaseScore(6);
+// game.dereaseScore(3);
+
+// console.log(`Final score is:${game.getScore()}pts`);
