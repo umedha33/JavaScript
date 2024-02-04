@@ -1836,3 +1836,36 @@
 
 // shuffle(cards);
 // console.log(cards);
+
+
+
+// date objects -------------------------------------------------------------------------------------------------
+// objects that contain values that represent date and times, can also be formatted and changed ---------
+
+// // Date(year, month, day, hour, minute, second, ms)
+// const currentDate = new Date(); // assigning the current date to a variable...
+// const newDate = new Date(2024, 0, 20, 4, 45, 50); // creating a new date object manually... 
+
+// console.log(currentDate);
+// // console.log(newDate);
+
+// const year = currentDate.getFullYear(); // getting year property of the default object...
+// const month = currentDate.getMonth(); 
+// const date = currentDate.getDate(); 
+
+// console.log(`year is: ${year}`);
+// console.log(`month is: ${month}`);
+// console.log(`date is: ${date}`);
+
+// currentDate.setFullYear(2025); // updating the default object values...
+// currentDate.setDate(20); 
+// currentDate.setMonth(0); 
+// console.log(currentDate);
+
+// // comparing dates...
+// const date1 = new Date("2023-01-20"); // creating an object using string representation... 
+// const date2 = new Date("2024-01-01");
+
+// if (date2 > date1) {
+//     console.log("Happy new year");
+// }
