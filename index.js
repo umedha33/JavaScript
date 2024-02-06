@@ -400,7 +400,7 @@
 
 // if(!isSunny){
 //     console.log("It is sunny");
-// } else {       
+// } else {
 //     console.log("It is cloudy");
 // }
 
@@ -463,7 +463,7 @@
 //     if(i == 10){
 //         break;
 //     } else {
-//         console.log(i); 
+//         console.log(i);
 //     }
 // }
 // console.log("OMG");
@@ -647,7 +647,7 @@
 // let myName = "Umedha";
 // let leters = [...myName].join("-");
 
-// console.log(leters); 
+// console.log(leters);
 
 // let fruits = ["apple", "orange", "watermelon"];
 // let vegetables = ["potato", "salad"];
@@ -685,7 +685,7 @@
 // const food5 = "sushi";
 
 // const food = getFood(food1, food2, food3, food4, food5);
-// console.log(food); 
+// console.log(food);
 
 
 // function sum(...numbers) {
@@ -1290,7 +1290,7 @@
 
 
 // Static -----------------------------------------------------------------------------------------------
-// a keyword that defines properties or methods that belong to a class itself rather than the object created from that class 
+// a keyword that defines properties or methods that belong to a class itself rather than the object created from that class
 // class owns anything static, not the objects ---------------------------------------------------
 // statics are owned by the class not by the objects, its like a global variable but inside the class...
 
@@ -1581,7 +1581,7 @@
 // {} = to perform object destruction ------------------------------------------
 
 // ------------- EX 1 -----------------------
-// swapping the values of two variables 
+// swapping the values of two variables
 
 // let a = 5;
 // let b = 10;
@@ -1776,7 +1776,7 @@
 // console.log(lowCallorie);
 
 // using reduce() with the objects
-// const maxFruit = fruits.reduce((max, fruit) => 
+// const maxFruit = fruits.reduce((max, fruit) =>
 //                                 fruit.calories > max.calories ?
 //                                 fruit : max);
 
@@ -1786,7 +1786,7 @@
 
 
 // sort() -------------------------------------------------------------------------------------------------
-// method used to sort elements of an array, sorrts elements as strings in lexicographic order in alphabetically 
+// method used to sort elements of an array, sorrts elements as strings in lexicographic order in alphabetically
 // lexicographic = {alphabet + numbers + symbols} as string...
 
 // let letters = ["q", "c", "v", "d", "b", "r", "h", "a"];
@@ -1844,26 +1844,26 @@
 
 // // Date(year, month, day, hour, minute, second, ms)
 // const currentDate = new Date(); // assigning the current date to a variable...
-// const newDate = new Date(2024, 0, 20, 4, 45, 50); // creating a new date object manually... 
+// const newDate = new Date(2024, 0, 20, 4, 45, 50); // creating a new date object manually...
 
 // console.log(currentDate);
 // // console.log(newDate);
 
 // const year = currentDate.getFullYear(); // getting year property of the default object...
-// const month = currentDate.getMonth(); 
-// const date = currentDate.getDate(); 
+// const month = currentDate.getMonth();
+// const date = currentDate.getDate();
 
 // console.log(`year is: ${year}`);
 // console.log(`month is: ${month}`);
 // console.log(`date is: ${date}`);
 
 // currentDate.setFullYear(2025); // updating the default object values...
-// currentDate.setDate(20); 
-// currentDate.setMonth(0); 
+// currentDate.setDate(20);
+// currentDate.setMonth(0);
 // console.log(currentDate);
 
 // // comparing dates...
-// const date1 = new Date("2023-01-20"); // creating an object using string representation... 
+// const date1 = new Date("2023-01-20"); // creating an object using string representation...
 // const date2 = new Date("2024-01-01");
 
 // if (date2 > date1) {
@@ -1946,3 +1946,38 @@
 // game.dereaseScore(3);
 
 // console.log(`Final score is:${game.getScore()}pts`);
+
+
+
+// setTimeout() ----------------------------------------------------------------------------------------------------
+// this is a function used to keep a delay upon execusion with entered amount of milliseconds ------------------
+//  setTimeout(callback, delay);
+
+// function sayHello() {
+//     console.log("Hey there!");
+// }
+
+// sayHello(); // instant exec...
+// setTimeout(sayHello, 5000); // exec with 5sec delay...
+
+// // anonymous and arrow functions can alsp be called with timeouts...
+
+// setTimeout(function () { console.log("hey its anon func") }, 3000);
+// setTimeout(() => console.log("hey this is arrow"), 3500);
+
+// // clearTimeout() -------------------------------------------------------------------------------------
+// // can be used to stop triggering delayed execusions using specific ID --------------
+
+// const timeout1 = setTimeout(() => console.log("this wont be triggered"), 2000);
+// clearTimeout(timeout1); // using this timeout1 will be stopped executing...
+
+// let timeout2;
+
+// function startTimer() {
+//     timeout2 = setTimeout(() => console.log("hey clicked"), 2000);
+// }
+
+// function stopTimer() {
+//     clearTimeout(timeout2);
+//     console.log("cleared triger");
+// }
