@@ -1,12 +1,12 @@
-#container{
+/* #container{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
-}
+} */
 
 button{
-    font-size: 1rem;
+    font-size: 10px;
     padding: 10px 15px;
     border-radius: 10px;
     border: none;
@@ -14,6 +14,10 @@ button{
     color: white;
     font-weight: 600;
     cursor: pointer;
+}
+
+h1{
+    margin-left: 15px;
 }
 
 input{
