@@ -2071,3 +2071,43 @@
 // console.log(`circumf is: ${getCircumf(radius).toFixed(2)}cm`);
 // console.log(`area is: ${getArea(radius).toFixed(2)}cm^2`);
 
+
+
+// Error -------------------------------------------------------------------------------------------------------
+// an objectthat is created to represent a problem that occur during executing/input --------
+// try {} = encloses codes that might cuase an error --------------------------------
+// catch {} = catch and handle any thrown errors from try {} --------------------------
+// finally {} = (optional) always executes, used mostly to cleanup --------------------
+
+// try {
+//     console.log(x);
+// }
+
+// catch (error) {
+//     console.error(error);
+// }
+
+// console.log("reached the end");
+
+
+// try {
+//     const dividend = Number(window.prompt("enter dividend"));
+//     const divisor = Number(window.prompt("enter divisor"));
+
+//     if (divisor == 0) {
+//         throw new Error("You cannot use 0 as divisor");
+//     }
+
+//     if (isNaN(dividend) || isNaN(divisor)) {
+//         throw new Error("dividend or divisor should be a number");
+//     }
+
+//     const result = dividend / divisor;
+//     console.log(result);
+// }
+
+// catch (error) {
+//     console.error(error);
+// }
+
+// console.log("reached the end");
