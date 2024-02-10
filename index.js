@@ -2191,9 +2191,84 @@
 // // element.style.background = "lightgreen";
 
 
-
 // const foods = document.querySelectorAll("li");
 
 // foods.forEach(food => {
 //     food.style.background = "orange";
 // })
+
+
+
+// DOM navigation  -------------------------------------------------------------------------------------------------------
+// the process of navigating through the structure of an html document -------------------
+
+// .firstElementChild
+// .lastElementChild
+// .nextElementSibling
+// .previuosElementSibling
+// .parentElement
+// .children
+
+// firstelemchild -----------------------------------------------------
+
+// const element = document.getElementById("fruits");
+// const firstChild = element.firstElementChild;
+// firstChild.style.background = "yellow";
+
+// const ulElems = document.querySelectorAll("ul");
+// ulElems.forEach(ulElem => {
+//     const firstChild = ulElem.firstElementChild;
+//     firstChild.style.background = "pink";
+// });
+
+// secondelemchild -----------------------------------------------------
+
+// const element = document.getElementById("fruits");
+// const lastChild = element.lastElementChild;
+// lastChild.style.color = "blue";
+
+// const ulElems = document.querySelectorAll("ul");
+// ulElems.forEach(ulElem => {
+//     const lastChild = ulElem.lastElementChild;
+//     lastChild.style.color = "red";
+// })
+
+// nextelemsibling -----------------------------------------------------
+
+// const element = document.getElementById("apple");
+// const nextSib = element.nextElementSibling;
+// nextSib.style.background = "yellow";
+
+// const eleme = document.getElementById("fruits");
+// const nextSibElem = eleme.nextElementSibling;
+// nextSibElem.style.background = "pink";
+
+// previouselemsibling -----------------------------------------------------
+
+// const element = document.getElementById("orange");
+// const prevSib = element.previousElementSibling;
+// prevSib.style.background = "lightgreen";
+
+// const elem = document.getElementById("vegetables");
+// const prevSibl = elem.previousElementSibling;
+// prevSibl.style.background = "lightgreen";
+
+// parentelement -----------------------------------------------------
+
+// const element = document.getElementById("apple");
+// const parent = element.parentElement;
+// parent.style.color = "red";
+
+// children ----------------------------------------------------------
+
+// const element = document.getElementById("fruits");
+// const children = element.children;
+
+// Array.from(children).forEach(child => {
+//     child.style.color = "blue";
+// });
+
+// const element = document.getElementById("desserts");
+// const children = element.children;
+
+// children[2].style.background = "blue";
