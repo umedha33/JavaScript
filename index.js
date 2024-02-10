@@ -2135,3 +2135,65 @@
 //         display.value = "ERROR";
 //     }
 // }
+
+
+
+// element selector  -------------------------------------------------------------------------------------------------------
+// methods used to target and manipulate html elements --------------------------------------
+// allows to select one or more html elements from the DOM (Document Object Model) -----
+
+// 1. document.getElementById() - element or null
+// 2. document.getElementsByClassName() - html collection
+// 3. document.getElementsByTagName() - html collection
+// 4. document.querySelector() - element or null
+// 5. document.querySelectorAll() - nodelist
+
+// const myHeading = document.getElementById("my-heading");
+// myHeading.style.background = "yellow";
+
+
+// const fruits = document.getElementsByClassName("fruits");
+// // console.log(fruits);
+// // fruits[0].style.background = "yellow"; 
+
+// for (let fruit of fruits) {
+//     fruit.style.background = "pink";
+// }
+
+// // Array.from(fruits).forEach(fruit => {
+// //     fruit.style.background = "red";
+// // });
+
+
+// const h4Elements = document.getElementsByTagName("h4");
+// // console.log(h4Elements);
+// // h4Elements[0].style.background = "wheat";
+
+// // for (let element of h4Elements) {
+// //     element.style.background = "wheat";
+// // }
+
+// const liElements = document.getElementsByTagName("li");
+
+// // for (let liElem of liElements) {
+// //     liElem.style.background = "lightgreen";
+// // }
+
+// Array.from(h4Elements).forEach(element => {
+//     element.style.background = "wheat";
+// });
+
+// Array.from(liElements).forEach(element => {
+//     element.style.color = "blue";
+// })
+
+// const element = document.querySelector("ul"); // first result of the selected query...
+// // element.style.background = "lightgreen";
+
+
+
+// const foods = document.querySelectorAll("li");
+
+// foods.forEach(food => {
+//     food.style.background = "orange";
+// })
