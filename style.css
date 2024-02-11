@@ -1,20 +1,5 @@
-body {
-    margin: 0;
-}
-
-#mybox {
-    background-color: lightgreen;
-    width: 150px;
-    height: 150px;
-    font-size: 2rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    position: relative;
-}
 
 #btn {
     font-size: 1rem;
+    margin: 20px;
 }

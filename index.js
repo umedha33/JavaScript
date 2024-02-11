@@ -2363,54 +2363,73 @@
 //     console.log(`key up = ${event.key}`);
 // });
 
-const mybox = document.getElementById("mybox");
-const moveamount = 10;
-let x = 0;
-let y = 0;
+// const mybox = document.getElementById("mybox");
+// const moveamount = 10;
+// let x = 0;
+// let y = 0;
+
+// // document.addEventListener("keydown", (event) => {
+// //     mybox.textContent = "qw";
+// //     mybox.style.background = "tomato";
+// // })
+
+// // document.addEventListener("keyup", (event) => {
+// //     mybox.textContent = "JS";
+// //     mybox.style.background = "lightgreen";
+// // })
+
+// document.addEventListener("keydown", (event)=>{
+//     mybox.style.background = "pink";
+//     mybox.textContent = "😶‍🌫️";
+// })
+
+// document.addEventListener("keyup", (event)=>{
+//     mybox.style.background = "lightgreen";
+//     mybox.textContent = "🫥";
+// })
 
 // document.addEventListener("keydown", (event) => {
-//     mybox.textContent = "qw";
-//     mybox.style.background = "tomato";
+//     if(event.key.startsWith("Arrow")){
+
+//         switch (event.key) {
+//             case "ArrowUp":
+//                 y -= moveamount;
+//                 break;
+
+//             case "ArrowDown":
+//                 y += moveamount;
+//                 break;
+
+//             case "ArrowLeft":
+//                 x -= moveamount;
+//                 break;
+
+//             case "ArrowRight":
+//                 x += moveamount;
+//                 break; 
+//         }
+
+//         mybox.style.top = `${y}px`;
+//         mybox.style.left = `${x}px`;
+
+//     }
 // })
 
-// document.addEventListener("keyup", (event) => {
-//     mybox.textContent = "JS";
-//     mybox.style.background = "lightgreen";
-// })
 
-document.addEventListener("keydown", (event)=>{
-    mybox.style.background = "pink";
-    mybox.textContent = "😶‍🌫️";
-})
 
-document.addEventListener("keyup", (event)=>{
-    mybox.style.background = "lightgreen";
-    mybox.textContent = "🫥";
-})
+// Show and hide html elements -------------------------------------------------------------------------------------------------------
 
-document.addEventListener("keydown", (event) => {
-    if(event.key.startsWith("Arrow")){
+const mybtn = document.getElementById("btn");
+const myImg = document.getElementById("img");
 
-        switch (event.key) {
-            case "ArrowUp":
-                y -= moveamount;
-                break;
+mybtn.addEventListener("click", (event) => {
 
-            case "ArrowDown":
-                y += moveamount;
-                break;
-
-            case "ArrowLeft":
-                x -= moveamount;
-                break;
-
-            case "ArrowRight":
-                x += moveamount;
-                break; 
-        }
-
-        mybox.style.top = `${y}px`;
-        mybox.style.left = `${x}px`;
-         
+    if (myImg.style.visibility === "hidden") {
+        myImg.style.visibility = "visible";
+        mybtn.textContent = "hide";
+    } else {
+        myImg.style.visibility = "hidden";
+        mybtn.textContent = "show";
     }
+
 })
