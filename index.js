@@ -2297,3 +2297,55 @@
 
 // // remove html elements...
 // document.getElementById("box1").removeChild(newH1);
+
+
+
+// Event listeners -------------------------------------------------------------------------------------------------------
+// click, mouseover, mouseout -------------------------------------------------------------------
+// .addEventListener("event", callback) ----------------------------------------------------
+
+// const box = document.getElementById("myBox");
+// const btn = document.getElementById("btn");
+
+// function changeColor(event){
+//     event.target.style.background = "tomato";
+//     event.target.textContent = "clicked";
+// }
+
+// box.addEventListener("click", changeColor);
+
+// box.addEventListener("click", function (event) {
+//     event.target.style.background = "tomato";
+//     event.target.textContent = "clicked";
+// });
+
+// box.addEventListener("click", (event) => {
+//     event.target.style.background = "tomato";
+//     event.target.textContent = "clicked";
+// });
+
+// box.addEventListener("mouseover", (event) => {
+//     event.target.style.background = "pink";
+//     event.target.textContent = "mouseover";
+// });
+
+// box.addEventListener("mouseout", (event) => {
+//     event.target.style.background = "gray";
+//     event.target.textContent = "mouseout";
+// });
+
+// btn.addEventListener("click", (event) => {
+//     box.style.background = "tomato";
+//     box.textContent = "clicked";
+// });
+
+// btn.addEventListener("mouseover", (event) => {
+//     box.style.background = "pink";
+//     box.textContent = "mouseover";
+// });
+
+// btn.addEventListener("mouseout", (event) => {
+//     box.style.background = "gray";
+//     box.textContent = "mouseout";
+// });
+
