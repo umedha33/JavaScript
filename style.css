@@ -1,4 +1,8 @@
-#myBox{
+body {
+    margin: 0;
+}
+
+#mybox {
     background-color: lightgreen;
     width: 150px;
     height: 150px;
@@ -8,6 +12,7 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+    position: relative;
 }
 
 #btn {
